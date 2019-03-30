@@ -25,6 +25,18 @@ void Funcionario::setSalario(float salario){
   
 }
 
+
+// Overload == operator to compare two Funcionario objects.
+bool Funcionario::operator== (const Funcionario& func1) {
+      
+    if(this->nome.compare(func1.nome) == 0){
+        return true;
+    }
+      
+    return false;
+}
+
+
 //Constructor parameterized with admission date(dd/mm/yy), salary and name
 Funcionario::Funcionario(unsigned int ano, unsigned int mes, unsigned int dia,
                             float salario, std::string nome){

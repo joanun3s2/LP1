@@ -21,15 +21,9 @@ class Funcionario{
     float getSalario();
     void setSalario(float salario);
 
-    // Overload == operator to compare two Funcionario objects.
-    bool operator== (const std::string nome, const Funcionario& func1) {
-      
-      func.
-      box.breadth = this->breadth + b.breadth;
-      box.height = this->height + b.height;
-      return true;
-   }
 
+    // Overload == operator to compare two Funcionario objects.
+    bool operator== (const Funcionario& func1) ;
     //Constructor
     Funcionario(unsigned int ano, unsigned int mes, unsigned int dia,
                             float salario, std::string nome);

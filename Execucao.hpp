@@ -2,6 +2,10 @@
 #include "Empresa.hpp"
 
 #include <iostream>
+#include <vector>
+
+#ifndef _EXECUCAO_HPP_
+#define _EXECUCAO_HPP_
 
 class Execucao{
 
@@ -11,6 +15,10 @@ class Execucao{
     
   public:
     void AddFuncionarios();
+    std::string nomeFuncionario;
+    std::string nomeEmpresa;
 
 
 };
+
+#endif

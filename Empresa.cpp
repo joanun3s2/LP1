@@ -1,23 +1,23 @@
 #include "Empresa.hpp"
 
 //Getters and Setters
-std::string getNome(){
+std::string Empresa::getNome(){
 
   return nome;
 
 }
-void setNome(std::string nome){
+void Empresa::setNome(std::string nomeEmpresa){
 
-  this.nome = nome;
+  nome = nomeEmpresa;
 
 }
 
-long getCNPJ(){
+long Empresa::getCNPJ(){
 
   return CNPJ;
 
 }
-void setCNPJ(long cnpj){
+void Empresa::setCNPJ(long cnpj){
 
   CNPJ = cnpj;
 
@@ -27,7 +27,7 @@ void setCNPJ(long cnpj){
 
 
 //Constructor
-Empresa(std::string nome, long cnpj){
+Empresa::Empresa(std::string nome, long cnpj){
 
   this->nome = nome;
   CNPJ = cnpj;
